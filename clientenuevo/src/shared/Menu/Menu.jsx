@@ -2,9 +2,9 @@ import { Link } from "react-router-dom"
 export function Menu() {
     return (
         <>
-            <nav className="navbar navbar-expand-lg bg-body-tertiary">
+            <nav className="navbar navbar-expand-lg bg-dark bg-body-tertiary"  data-bs-theme="dark">
                 <div className="container-fluid">
-                    <Link className="navbar-brand" to="/">MIGOS</Link>
+                    <Link className="navbar-brand" to="/">THE MIGOS</Link>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
@@ -20,8 +20,9 @@ export function Menu() {
                                 <Link className="nav-link" to="/tienda">Tienda</Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link ">Musica</a>
+                                <Link className="nav-link" to="/fans">Fans</Link>
                             </li>
+                            
                         </ul>
                     </div>
                 </div>
