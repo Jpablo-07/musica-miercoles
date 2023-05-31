@@ -18,3 +18,8 @@
     font-family: 'Dancing Script', cursive;
     font-family: 'Sigmar', cursive;
 }
+
+.blancoynegro{
+    filter: grayscale(1);
+    transform: scale(1.5); 
+}

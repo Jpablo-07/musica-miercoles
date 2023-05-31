@@ -22,6 +22,12 @@ export function Menu() {
                             <li className="nav-item">
                                 <Link className="nav-link" to="/fans">Fans</Link>
                             </li>
+                            <li className="nav-item">
+                                <Link className="nav-link" to="/hook">Hook</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link className="nav-link" to="/musica">Musica</Link>
+                            </li>
                             
                         </ul>
                     </div>

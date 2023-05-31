@@ -27,6 +27,19 @@ export function Members(){
         id:3}
     ]
 
+
+    function quehagocuandosedeelevento(evento){
+        (evento.target.classList.add("blancoynegro"))
+    }
+
+    function quehagocuandosedeelotroevento(evento){
+        (evento.target.classList.remove("blancoynegro"))
+    }
+
+    
+
+    
+
     return(
         <>
             
@@ -45,7 +58,7 @@ export function Members(){
 
                                 <div className="col-12 col-md-6 card2">
                                         <h3 className="text-center fw-bold">{integrante.nombre}</h3>
-                                        <img src={integrante.foto} alt="foto" className="img-fluid w-100 h-100"/>
+                                        <img src={integrante.foto} alt="foto" className="img-fluid w-100 h-100" onMouseOver={quehagocuandosedeelevento} onMouseLeave={quehagocuandosedeelotroevento} />
                                         <h3 className="text-center fw-bold text-info">NOMBRE ARTISTICO: {integrante.nombre_artistico}</h3>
                                         <h3 className="text-center fw-bold">{integrante.nacimiento}</h3>
                                         <h3 className="text-center fw-bold">ROL: {integrante.rol}</h3>
